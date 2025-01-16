@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Video Columns with Gap and Mute Toggle</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+
+    .video-container {
+      display: flex;
+      width: 80%;
+      height: 80%;
+      gap: 2px;  /* Adds a gap between the columns */
+    }
+
+    .video-column {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; 
+    }
+
+
+    
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-container">
+    <div class="video-column">
+      <video src="C:\Users\Dell\Downloads\html5-boilerplate_v9-main\html5-boilerplate_v9-main\draft3.mp4" autoplay muted loop></video>
+    </div>
+    <div class="video-column">
+      <video src="C:\Users\Dell\Downloads\html5-boilerplate_v9-main\html5-boilerplate_v9-main\draft3.mp4" autoplay muted loop></video>
+    </div>
+    <div class="video-column">
+      <video src="C:\Users\Dell\Downloads\html5-boilerplate_v9-main\html5-boilerplate_v9-main\draft3.mp4" autoplay muted loop onclick="toggleMute(this)"></video>
+    </div>
+  </div>
+
+</body>
+</html>

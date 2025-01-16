@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Images</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black; /* Optional for contrast */
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center images horizontally */
+            justify-content: flex-start; /* Align images to the top */
+            height: 100vh;
+        }
+
+        img {
+            max-width: 100%; /* Scale image width responsively */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px; /* Add space between images */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.pinimg.com/736x/b3/1b/da/b31bda5196e69670e1ea634b466a3597.jpg" alt="Image 1">
+    <img src="https://i.pinimg.com/736x/2e/1e/70/2e1e70b171b25c6af2e5d6a354ed5130.jpg" alt="Image 2">
+    <img src="https://i.pinimg.com/736x/40/7c/e6/407ce67a947726a493f33c724591669e.jpg" alt="Image 3">
+    <img src="https://i.pinimg.com/736x/d7/40/19/d74019d6fecaf7cc15be44acf2d7ad95.jpg" alt="Image 4">
+</body>
+</html>

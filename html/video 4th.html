@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Video Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    .video-container {
+      width: 100%; /* You can change this to adjust video size */
+      margin: 10px;
+      gap: 1px;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-container">
+    <video src="C:\Users\Dell\Downloads\html5-boilerplate_v9-main\html5-boilerplate_v9-main\bird.mp4" autoplay muted loop></video>
+  </div>
+
+  <div class="video-container">
+    <video src="C:\Users\Dell\Downloads\html5-boilerplate_v9-main\html5-boilerplate_v9-main\rabbit.mp4" autoplay muted loop></video>
+
+  </div>
+
+</body>
+</html>
+
